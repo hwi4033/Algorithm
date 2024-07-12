@@ -4,50 +4,38 @@ namespace Program
 {
     internal class Program
     {
-        static bool IsPrime(int n)
-        {
-            for (int i = 2; i < n; i++)
-            {
-                if (n % i == 0)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
         static void Main(string[] args)
         {
-            #region 소수 판별
+            #region 선택 정렬
+            // 주어진 리스트 중에 최소값을 찾아서 맨 앞에 위치한 결과를 교체하는 방식으로 정렬하는 알고리즘이다.
 
-            // int num = 19;
-            // 
-            // while (true)
-            // {
-            //     for (int i = 2; i < num; i++)
-            //     {
-            //         if (num % i == 0)
-            //         {
-            //             Console.WriteLine("X");
-            //             return;
-            //         }
-            //     }
-            // 
-            //     Console.WriteLine("O");
-            //     return;
-            // }
+            int[] ary = new int[] { 9, 6, 7, 3, 5 };
 
-            // int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < ary.Length; i++)
+            {
+                int min = ary[i];
 
-            // Console.WriteLine(IsPrime(n));
+                int index = i;
 
-            #endregion
+                for (int j = i + 1; j < ary.Length; j++)
+                {
+                    if (min > ary[j])
+                    {
+                        min = ary[j];
 
-            #region 에라토스테네스의 체
-            // 소수를 판정하는 방법으로, 자연수를 순서대로 늘어놓은 표에서 합성수를 차례대로 지워나가면서 소수의 목록을 얻어내는 방법이다.
+                        index = j;
+                    }
+                }
 
+                int temp = ary[i];
+                ary[i] = ary[index];
+                ary[index] = temp;
+            }
 
+            for (int i = 0; i < ary.Length; i++)
+            {
+                Console.Write(ary[i] + " ");
+            }
 
             #endregion
         }
