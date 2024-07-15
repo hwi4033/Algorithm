@@ -6,35 +6,26 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            #region 선택 정렬
-            // 주어진 리스트 중에 최소값을 찾아서 맨 앞에 위치한 결과를 교체하는 방식으로 정렬하는 알고리즘이다.
+            #region 계수 정렬
+            // 데이터의 값을 직접 비교하지 않고 단순하게 각 숫자가 몇 개 있는지 개수를 세어 저장한 다음 정렬하는 알고리즘이다. 
 
-            int[] ary = new int[] { 9, 6, 7, 3, 5 };
+            int[] ary = new int[] { 1, 6, 6, 6, 5, 1, 2, 3, 1, 2, 3, 6, 5, 4 };
+            int[] count = new int[6];
 
-            for (int i = 0; i < ary.Length; i++)
+            for (int i = 0; i < count.Length; i++)
             {
-                int min = ary[i];
-
-                int index = i;
-
-                for (int j = i + 1; j < ary.Length; j++)
+                for (int j = 0; j < ary.Length; j++)
                 {
-                    if (min > ary[j])
+                    if (ary[j] == i + 1)
                     {
-                        min = ary[j];
-
-                        index = j;
+                        count[i]++;
                     }
                 }
-
-                int temp = ary[i];
-                ary[i] = ary[index];
-                ary[index] = temp;
             }
 
-            for (int i = 0; i < ary.Length; i++)
+            for (int k = 0; k < count.Length; k++)
             {
-                Console.Write(ary[i] + " ");
+                Console.Write(count[k] + " ");
             }
 
             #endregion
