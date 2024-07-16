@@ -4,30 +4,43 @@ namespace Program
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void BinarySearch(int[] array, int num)
         {
-            #region 계수 정렬
-            // 데이터의 값을 직접 비교하지 않고 단순하게 각 숫자가 몇 개 있는지 개수를 세어 저장한 다음 정렬하는 알고리즘이다. 
+            int left = 0;
+            int right = array.Length - 1;
+            int middle = (left + right) / 2;
 
-            int[] ary = new int[] { 1, 6, 6, 6, 5, 1, 2, 3, 1, 2, 3, 6, 5, 4 };
-            int[] count = new int[6];
-
-            for (int i = 0; i < count.Length; i++)
+            while(right >= left)
             {
-                for (int j = 0; j < ary.Length; j++)
+                if (num > array[middle])
                 {
-                    if (ary[j] == i + 1)
-                    {
-                        count[i]++;
-                    }
+                    left = middle + 1;
+                    middle = (left + right) / 2;
+                }
+                else if (num < array[middle])
+                {
+                    right = middle - 1;
+                    middle = (left + right) / 2;
+                }
+                
+                if (num == array[middle])
+                {
+                    Console.WriteLine("[" + middle + "] : " + num);
+                    return;
                 }
             }
 
-            for (int k = 0; k < count.Length; k++)
-            {
-                Console.Write(count[k] + " ");
-            }
+            Console.WriteLine("X");
+        }
 
+        static void Main(string[] args)
+        {
+            #region 이진 탐색
+            // 탐색 범위를 반으로 나누어 찾고자 하는 값을 포함하는 범위를 좁혀가는 방식으로 동작하는 탐색 알고리즘이다.
+
+            int[] ary = new int[] { 5, 6, 8, 11, 22, 33, 44, 50, 51, 79 };
+
+            BinarySearch(ary, 33);
             #endregion
         }
     }

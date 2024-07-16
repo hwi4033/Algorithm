@@ -11,11 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class2th (Sieve of Eratosth
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class3th (Bubble Sort)", "..\Class3th (Bubble Sort)\Class3th (Bubble Sort).csproj", "{73E353FD-3C50-4B56-9FDA-F158A3106C4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class4th (Select Sort)", "..\Class4th (Select Sort)\Class4th (Select Sort).csproj", "{E1D9D6B7-0CA6-4BA1-B8EC-70C5A32DA1B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class4th (Select Sort)", "..\Class4th (Select Sort)\Class4th (Select Sort).csproj", "{E1D9D6B7-0CA6-4BA1-B8EC-70C5A32DA1B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class5th (Insert Sort)", "..\Class5th (Insert Sort)\Class5th (Insert Sort).csproj", "{52FCCB97-CFC2-4A22-BFA7-6BF02FE7EF87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class5th (Insert Sort)", "..\Class5th (Insert Sort)\Class5th (Insert Sort).csproj", "{52FCCB97-CFC2-4A22-BFA7-6BF02FE7EF87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class6th (Shell Sort)", "..\Class6th (Shell Sort)\Class6th (Shell Sort).csproj", "{DEBF1D00-9428-43C3-AAEB-56712FC18313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class6th (Shell Sort)", "..\Class6th (Shell Sort)\Class6th (Shell Sort).csproj", "{DEBF1D00-9428-43C3-AAEB-56712FC18313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class7th (Count Sort)", "..\Class7th (Count Sort)\Class7th (Count Sort).csproj", "{F3ADCB2C-2C48-4BBF-A59E-1903B7789F52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class8th (Two Pointer)", "..\Class8th (Two Pointer)\Class8th (Two Pointer).csproj", "{010B2224-559F-4726-81CE-858BF52C565B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{DEBF1D00-9428-43C3-AAEB-56712FC18313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEBF1D00-9428-43C3-AAEB-56712FC18313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEBF1D00-9428-43C3-AAEB-56712FC18313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3ADCB2C-2C48-4BBF-A59E-1903B7789F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3ADCB2C-2C48-4BBF-A59E-1903B7789F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3ADCB2C-2C48-4BBF-A59E-1903B7789F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3ADCB2C-2C48-4BBF-A59E-1903B7789F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{010B2224-559F-4726-81CE-858BF52C565B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010B2224-559F-4726-81CE-858BF52C565B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010B2224-559F-4726-81CE-858BF52C565B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010B2224-559F-4726-81CE-858BF52C565B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
