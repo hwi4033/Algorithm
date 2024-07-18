@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class7th (Count Sort)", "..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class8th (Two Pointer)", "..\Class8th (Two Pointer)\Class8th (Two Pointer).csproj", "{010B2224-559F-4726-81CE-858BF52C565B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class9th (Binary Search)", "..\Class9th (Binary Search)\Class9th (Binary Search).csproj", "{07D7832C-80A3-4AE8-B0C5-1A5BE8C37C6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class9th (Binary Search)", "..\Class9th (Binary Search)\Class9th (Binary Search).csproj", "{07D7832C-80A3-4AE8-B0C5-1A5BE8C37C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class10th (Divide & Conquer)", "..\Class10th (Divide & Conquer)\Class10th (Divide & Conquer).csproj", "{A10701F0-6A3A-4AAC-97CA-9501DEC47894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class10th (Divide & Conquer)", "..\Class10th (Divide & Conquer)\Class10th (Divide & Conquer).csproj", "{A10701F0-6A3A-4AAC-97CA-9501DEC47894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class11th (Quick Sort)", "..\Class11th (Quick Sort)\Class11th (Quick Sort).csproj", "{A23DCBAC-D0CC-412E-8DA1-BE3AE2B1F855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{A10701F0-6A3A-4AAC-97CA-9501DEC47894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A10701F0-6A3A-4AAC-97CA-9501DEC47894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A10701F0-6A3A-4AAC-97CA-9501DEC47894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23DCBAC-D0CC-412E-8DA1-BE3AE2B1F855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23DCBAC-D0CC-412E-8DA1-BE3AE2B1F855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23DCBAC-D0CC-412E-8DA1-BE3AE2B1F855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23DCBAC-D0CC-412E-8DA1-BE3AE2B1F855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

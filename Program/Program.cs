@@ -4,69 +4,81 @@ namespace Program
 {
     internal class Program
     {
-        static void QuickSort(int[] list, int start, int end)
+        static void MergeSort(int[] list, int start, int end)
         {
-            // 1. pivot 변수의 값을 설정한다.
-            int pivot = start;
-            // 2. start 변수의 값을 설정한다.
-            int left = start + 1;
-            // 3. end 변수의 값을 설정한다.
-            int right = end;
-            
-            // 4. start가 end보다 크거나 같을 때까지 반복한다.
-            while (left <= right)
+            int middle = (start + end) / 2;
+
+            if (start >= end)
             {
-                // 5. left가 end보다 작거나 같고 list[left]가 list[pivot]보다 작거나 같을 때까지 반복한다.
-                while (left <= end && list[pivot] >= list[left])
-                {
-                    left++;
-                }
-
-                // 6. right가 start보다 크고 list[right]가 list[pivot]보다 크거나 같을 때까지 반복한다.
-                while (right > start && list[pivot] <= list[right])
-                {
-                    right++;
-                }
-
-                int temp = list[left];
-                list[left] = list[right];
-                list[right] = temp;
+                return;
             }
 
-            int tempo = list[left];
-            list[left] = list[right];
-            list[right] = tempo;
+            MergeSort(list, start, middle);
+            MergeSort(list, middle + 1, end);
+            Merge(list, start, middle, end);
 
+/*
+            if (start < end)
+            {
+                int middle = (start + end) / 2;
 
+                MergeSort(list, start, middle);
+                MergeSort(list, middle + 1, end);
+            }
+*/
+        }
+
+        static void Merge(int[] list, int start, int middle, int end)
+        {
+            int count = 0;
+            int left = start;
+            int right = middle + 1;
+            int[] newList = new int[(right - left) + 1];
+
+            for (count = 0; count < newList.Length; count++)
+            {
+                if (right > end)
+                {
+                    newList[count] = list[left++];
+                }
+                else if (left > middle)
+                {
+                    newList[count] = list[right++];
+                }
+
+                if (list[left] > list[right])
+                {
+                    newList[count] = list[right++];
+                }
+                else
+                {
+                    newList[count] = list[left++];
+                }
+            }
+            
+            for (int i = 0; i < newList.Length; i++)
+            {
+                list[i] = newList[i];
+            }
         }
 
         static void Main(string[] args)
         {
-            #region 퀵 정렬
-            // 기준점을 획득한 다음 해당 기준점을 기준으로 배열을 나누고
-            // 한 쪽에는 기준점보다 작은 값들이 위치하고 다른 한 쪽에는 기준점보다 큰 값들이 위치하도록 한다.
+            #region 병합 정렬
+            // 하나의 리스트를 두 개의 균등한 크기로 분할하고 분할된 부분 리스트를 정렬한 다음,
+            // 두 개의 정렬된 부분 리스트를 합하여 전체가 정렬된 리스트가 되게 하는 알고리즘이다.
 
-            // 나누어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여 모든 배열이 기본 배열이 될 때까지 반복하면서 정렬한다.
+            // 1. 리스트의 길이가 0 또는 1이면 이미 정렬된 것으로 간주한디.
 
-            // 퀵 정렬은 평균적으로 O(n log n)의 시간 복잡도를 가지며,
-            // 최악의 경우 O(n²)의 시간 복잡도를 가진다.
+            // 2. 그렇지 않은 경우
 
-            // 1. 기준점을 선택한다.
-            // 2. 기준점을 기준으로 왼쪽은 기준점보다 큰 값, 오른쪽은 기준점보다 작은 값을 탐색한다.
-            // 3. 양방향에서 찾은 두 원소를 교환한다.
-            // 4. 왼쪽에서 탐색하는 위치와 오른쪽에서 탐색하는 위치가 엇갈리지 않을 때까지 2번으로 돌아가 위의 과정을 반복한다.
-            // 5. 엇갈린 기점을 기준으로 두 개의 부분 리스트로 나누어 1번으로 돌아가 해당 부분 리스트의 길이가 1이 될 때까지 반복한다.
-            // 6. 인접한 부분 리스트끼리 합하여 수행한다.
+            // 2-1. 정렬되지 않은 리스트를 절반으로 잘라 비슷한 크기의 두 부분 리스트로 나눈다.
+            // 2-2. 각 부분 리스트를 재귀적으로 병합 정렬을 이용해 정렬한다.
+            // 2-3. 두 부분 리스트를 다시 하나의 정렬된 리스트로 병합한다.
 
-            int[] ary = new int[] { 5, 3, 8, 9, 2, 4, 7 };
+            int[] ary = new int[] { 21, 10, 12, 20, 25, 13, 15, 22 };
 
-            QuickSort(ary, 0, ary.Length - 1);
-
-            for (int i = 0; i < ary.Length; i++)
-            {
-                Console.Write(ary[i] + " ");
-            }
-
+            MergeSort(ary, 0, ary.Length - 1);
             #endregion
         }
     }
