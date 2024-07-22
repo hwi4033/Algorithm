@@ -2,6 +2,20 @@
 {
     internal class Program
     {
+        static int Fibo(int num)
+        {
+            if (num <= 0)
+            {
+                return 0;
+            }
+            else if (num == 1)
+            {
+                return 1;
+            }
+
+            return Fibo(num - 1) + Fibo(num - 2);
+        }
+
         static int Fibonacci(int num, int[] list)
         {
             if (num <= 0)
@@ -59,7 +73,8 @@
             int[] ary = new int[10000];
             long[] array = new long[1000];
 
-            Console.WriteLine(Fibonacci(45, ary));
+            Console.WriteLine(Fibo(7));
+            //Console.WriteLine(Fibonacci(45, ary));
             //Console.WriteLine(FibonacciNumbers(array, 92));
 
             #endregion

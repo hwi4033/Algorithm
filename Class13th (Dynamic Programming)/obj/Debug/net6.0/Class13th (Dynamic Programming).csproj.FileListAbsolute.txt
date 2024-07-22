@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\bin\Debug\net6.0\Class13th (Dynamic Programming).exe
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\bin\Debug\net6.0\Class13th (Dynamic Programming).deps.json
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\bin\Debug\net6.0\Class13th (Dynamic Programming).runtimeconfig.json
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\bin\Debug\net6.0\Class13th (Dynamic Programming).dll
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\bin\Debug\net6.0\Class13th (Dynamic Programming).pdb
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).dll
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\refint\Class13th (Dynamic Programming).dll
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).pdb
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\Class13th (Dynamic Programming).genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Algorithm\Class13th (Dynamic Programming)\obj\Debug\net6.0\ref\Class13th (Dynamic Programming).dll
