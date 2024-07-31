@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class20th (Topological Sort
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class21th (Union Find)", "..\Class21th (Union Find)\Class21th (Union Find).csproj", "{8CAB8B01-9B58-4F8F-95E3-CF2D779B08BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class22th (Kruskal)", "..\Class22th (Kruskal)\Class22th (Kruskal).csproj", "{CE9AE119-2DD0-4602-ABF0-821239067C09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class22th (Kruskal)", "..\Class22th (Kruskal)\Class22th (Kruskal).csproj", "{CE9AE119-2DD0-4602-ABF0-821239067C09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class23th (Prefix sum)", "..\Class23th (Prefix sum)\Class23th (Prefix sum).csproj", "{3F73F61A-9B2C-467A-A7BE-C10EF2790D06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{CE9AE119-2DD0-4602-ABF0-821239067C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE9AE119-2DD0-4602-ABF0-821239067C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE9AE119-2DD0-4602-ABF0-821239067C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F73F61A-9B2C-467A-A7BE-C10EF2790D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F73F61A-9B2C-467A-A7BE-C10EF2790D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F73F61A-9B2C-467A-A7BE-C10EF2790D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F73F61A-9B2C-467A-A7BE-C10EF2790D06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
